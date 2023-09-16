@@ -1,5 +1,4 @@
 import { classNames } from '@/shared/lib/classNames/classNames';
-import cls from './LangSwitcher.module.scss';
 import { useTranslation } from 'react-i18next';
 import { Button, ThemeButton } from '@/shared/ui/Button/Button';
 import { FC } from 'react';
@@ -19,7 +18,7 @@ export const LangSwitcher: FC<LangSwitcherProps> = ({ className = '' }) => {
 
   return (
     <Button
-      className={classNames(cls.LangSwitcher, {}, [className])}
+      className={classNames('', {}, [className])}
       theme={ThemeButton.CLEAR}
       // eslint-disable-next-line @typescript-eslint/no-misused-promises
       onClick={toggle}
