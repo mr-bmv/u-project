@@ -7,5 +7,6 @@ export function buildDevServer(options: BuildOptions): DevServerConfiguration {
     // webpack будет автоматически открывать страницу с приложением
     open: true,
     historyApiFallback: true,
+    hot: true,
   };
 }
