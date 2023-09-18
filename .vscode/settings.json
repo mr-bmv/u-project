@@ -7,6 +7,7 @@
     "stylelint",
     "languagedetector",
     "pmmmwh",
-    "svgr"
+    "svgr",
+    "i18next"
   ]
 }

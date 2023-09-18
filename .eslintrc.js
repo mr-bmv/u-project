@@ -8,6 +8,7 @@ module.exports = {
     'plugin:react/recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:prettier/recommended',
+    'plugin:i18next/recommended',
   ],
   overrides: [
     {
@@ -25,10 +26,34 @@ module.exports = {
     sourceType: 'module',
     jsx: true,
   },
-  plugins: ['react', '@typescript-eslint'],
+  plugins: ['react', '@typescript-eslint', 'i18next'],
   parser: '@typescript-eslint/parser',
   rules: {
     'react/react-in-jsx-scope': 'off',
     'react/no-deprecated': 'off',
+
+    'i18next/no-literal-string': [
+      'error',
+      {
+        markupOnly: true,
+        ignoreAttribute: [
+          'as',
+          'role',
+          'data-testid',
+          'to',
+          'target',
+          'justify',
+          'align',
+          'border',
+          'direction',
+          'gap',
+          'feature',
+          'color',
+          'variant',
+          'size',
+          'wrap',
+        ],
+      },
+    ],
   },
 };
