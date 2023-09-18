@@ -9,5 +9,8 @@
     "pmmmwh",
     "svgr",
     "i18next"
-  ]
+  ],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.stylelint": true
+  }
 }
