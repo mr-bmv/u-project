@@ -3,6 +3,10 @@
     "testid",
     "отрисовывать",
     "продакшена",
-    "прокидывания"
+    "прокидывания",
+    "stylelint",
+    "languagedetector",
+    "pmmmwh",
+    "svgr"
   ]
 }
