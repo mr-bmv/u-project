@@ -1,10 +1,11 @@
-import { lazy } from "react";
+import { lazy } from 'react';
 
 export const AboutPageAsync = lazy(
   () =>
     new Promise((res) => {
-      // @ts-ignore
-      setTimeout(() => res(import("./AboutPage")), 2000);
+      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+      // @ts-ignore: Testing invalid input
+      setTimeout(() => res(import('./AboutPage')), 2000);
     })
 );
 
