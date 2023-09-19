@@ -11,7 +11,8 @@
     "lint:ts:fix": "eslint \"**/*.{ts,tsx}\" --fix",
     "lint:scss": "stylelint \"**/*.scss\"",
     "lint:scss:fix": "stylelint \"**/*.scss\" --fix",
-    "lint": "npm run lint:ts && npm run lint:scss"
+    "lint": "npm run lint:ts && npm run lint:scss",
+    "start:json-server": "node ./json-server/index.js"
   },
   "keywords": [],
   "author": "BMV",
@@ -39,6 +40,7 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.5.0",
+    "json-server": "^0.17.3",
     "mini-css-extract-plugin": "^2.5.3",
     "prettier": "^3.0.3",
     "sass": "^1.49.9",
