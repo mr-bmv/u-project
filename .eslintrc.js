@@ -26,7 +26,7 @@ module.exports = {
     sourceType: 'module',
     jsx: true,
   },
-  plugins: ['react', '@typescript-eslint', 'i18next'],
+  plugins: ['react', '@typescript-eslint', 'i18next', 'react-hooks'],
   parser: '@typescript-eslint/parser',
   rules: {
     'react/react-in-jsx-scope': 'off',
@@ -55,5 +55,7 @@ module.exports = {
         ],
       },
     ],
+    'react-hooks/rules-of-hooks': 'error',
+    'react-hooks/exhaustive-deps': 'error',
   },
 };
