@@ -8,6 +8,7 @@ import React, {
 } from 'react';
 import cls from './Modal.module.scss';
 import { Portal } from '@/shared/ui/Portal/Portal';
+import { useTheme } from '@/app/providers/ThemProvider';
 
 interface ModalProps {
   className?: string;
@@ -20,6 +21,7 @@ const ANIMATION_DELAY = 300;
 
 export const Modal = (props: ModalProps) => {
   const { className = '', children, isOpen = true, onClose } = props;
+  const { theme } = useTheme();
 
   // для плавного закрывания окна
   const [isClosing, setIsClosing] = useState(false);
