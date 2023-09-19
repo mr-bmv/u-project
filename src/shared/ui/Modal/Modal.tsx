@@ -7,7 +7,6 @@ import React, {
   useState,
 } from 'react';
 import cls from './Modal.module.scss';
-import { useTheme } from '@/app/providers/ThemProvider';
 import { Portal } from '@/shared/ui/Portal/Portal';
 
 interface ModalProps {
@@ -25,9 +24,6 @@ export const Modal = (props: ModalProps) => {
   // для плавного закрывания окна
   const [isClosing, setIsClosing] = useState(false);
   const timerRef = useRef<ReturnType<typeof setTimeout>>();
-
-  // не делать так в реальном проекте
-  const { theme } = useTheme();
 
   const closeHandler = useCallback(() => {
     if (onClose) {
@@ -67,8 +63,6 @@ export const Modal = (props: ModalProps) => {
   const mods: Record<string, boolean> = {
     [cls.opened]: isOpen,
     [cls.isClosing]: isClosing,
-    // не делать так в реальном проекте
-    [cls[theme]]: true,
   };
 
   return (
