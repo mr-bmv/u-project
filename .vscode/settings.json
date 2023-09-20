@@ -1,14 +1,16 @@
 {
   "cSpell.words": [
+    "i18next",
+    "languagedetector",
+    "LOCALSTORAGE",
+    "pmmmwh",
+    "reduxjs",
+    "stylelint",
+    "svgr",
     "testid",
     "отрисовывать",
     "продакшена",
-    "прокидывания",
-    "stylelint",
-    "languagedetector",
-    "pmmmwh",
-    "svgr",
-    "i18next"
+    "прокидывания"
   ],
   "editor.codeActionsOnSave": {
     "source.fixAll.stylelint": true
