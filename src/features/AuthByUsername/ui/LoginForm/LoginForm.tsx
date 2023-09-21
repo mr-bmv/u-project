@@ -12,11 +12,11 @@ import { ThunkDispatch } from '@reduxjs/toolkit';
 import { LoginSchema } from '../../model/types/loginSchema';
 import { Text, TextTheme } from '@/shared/ui/Text/Text';
 
-interface LoginFormProps {
+export interface LoginFormProps {
   className?: string;
 }
 
-export const LoginForm = memo(({ className = '' }: LoginFormProps) => {
+const LoginForm = memo(({ className = '' }: LoginFormProps) => {
   const { t } = useTranslation();
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const dispatch = useDispatch<ThunkDispatch<LoginSchema, unknown, any>>();
@@ -75,3 +75,5 @@ export const LoginForm = memo(({ className = '' }: LoginFormProps) => {
     </div>
   );
 });
+
+export default LoginForm;
