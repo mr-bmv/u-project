@@ -9,6 +9,7 @@ import {
   ReducersMapObject,
 } from '@reduxjs/toolkit';
 import { AxiosInstance } from 'axios';
+import { NavigateOptions, To } from 'react-router-dom';
 import { CombinedState } from 'redux';
 
 export interface StateSchema {
@@ -42,10 +43,11 @@ export interface ReduxStoreWithManager extends EnhancedStore<StateSchema> {
 
 export interface ThunkExtraArg {
   api: AxiosInstance;
+  navigate: (to: To, options?: NavigateOptions) => void;
 }
 
 export interface ThunkConfig<T> {
   rejectValue: T;
   extra: ThunkExtraArg;
-  state: StateSchema;
+  // state: StateSchema;
 }

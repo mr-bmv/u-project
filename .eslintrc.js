@@ -28,6 +28,10 @@ module.exports = {
   },
   plugins: ['react', '@typescript-eslint', 'i18next', 'react-hooks'],
   parser: '@typescript-eslint/parser',
+  globals: {
+    __IS_DEV__: true,
+    __API__: true,
+  },
   rules: {
     'react/react-in-jsx-scope': 'off',
     'react/no-deprecated': 'off',
