@@ -1,5 +1,6 @@
 import { StateSchema } from '@/app/providers/StoreProvider';
-import { Country, Currency } from '@/shared/const/common';
+import { Country } from '@/entities/Country';
+import { Currency } from '@/entities/Currency';
 
 // мой вариант
 const emptyProfile = {
