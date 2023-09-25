@@ -31,7 +31,6 @@ export const loginByUsername = createAsyncThunk<
     if (extra.navigate) extra.navigate('/about');
     return response.data;
   } catch (e) {
-    console.log(e);
     return rejectWithValue('error');
   }
 });

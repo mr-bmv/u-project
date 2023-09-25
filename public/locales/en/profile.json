@@ -2,5 +2,9 @@
   "Профиль пользователя": "User Profile",
   "Редактировать": "Edit",
   "Ваше имя": "Your name",
-  "Ваше фамилия": "Your surname"
+  "Ваше фамилия": "Your surname",
+  "некорректный возраст": "incorrect age",
+  "некорректная страна": "incorrect country",
+  "некорректные данные": "incorrect data",
+  "ошибка сервера": "server error"
 }
