@@ -24,6 +24,8 @@ export function buildWebpackConfig(options: BuildOptions): Configuration {
       path: paths.build,
       // очистка старых сборок проекта
       clean: true,
+      // что бы работать с динамическими путями типа /cart:123
+      publicPath: '/',
     },
 
     plugins: buildPlugins(options),
